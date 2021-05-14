@@ -208,8 +208,8 @@ int main(){
     int max_v = 0; //ノードの個数
     vector<edge> edges;
     vector<vector<edge>> Graph(100); //グラフ
-    int from, to, dist, link; //参考ソースコードのa,b,c,dに相当
-    ifstream fin("distance.txt");
+    int from, to, dist, link; 
+    ifstream fin("distance.txt"); //同じディレクトリにdistance.txt(名称は何でも可)を配置。
     if(!fin){
         fprintf(stderr, "ファイルが見つかりません\n");
         return 1;
